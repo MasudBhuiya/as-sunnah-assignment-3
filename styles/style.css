@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+    height: 68px;
+}
+
+.nav-lists{
+    display: flex;
+}
+.nav-lists li{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 30px;
+}
+
+/* banner style  */
+.banner{
+    background-image: url('https://getwallpapers.com/wallpaper/full/d/5/d/1064491-laptop-hd-wallpaper-1920x1200-iphone.jpg');
+    /* height: calc(100vh - 50px); */
+    background-size: cover;
+    height: calc(100vh - 68px);
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+    display: flex;
+    font-family: Raleway, sans-serif;
+    padding: 0 20px;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 115px;
+    letter-spacing:1px;
+}
+.banner-sub-title{
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+.banner-button{
+    background-color: #d8d0d0;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 20px;
+}
