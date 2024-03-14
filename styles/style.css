@@ -271,3 +271,36 @@ body{
     margin-top: 7px;
     padding: 4px;
 }
+
+
+
+/* pricing style  */
+.price{
+    padding: 128px 20px;
+    background-color: #616161;
+}
+.tables{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+.table{
+    text-align: center;
+    background-color: white;
+    height: fit-content;
+}
+.table p{
+    margin: 20px 0;
+}
+.price-table-title{
+    background-color: black;
+    padding:30px 0;
+    color: white;
+}
+.price-table-title-2{
+    background-color: rgb(245, 62, 62);
+    padding:48px 0;
+    color: white;
+}
