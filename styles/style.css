@@ -23,6 +23,10 @@ body{
     display: flex;
     cursor: pointer;
 }
+.nav-lists a{
+    text-decoration: none;
+    color: black;
+}
 .nav-lists li{
     text-decoration: none;
     list-style: none;
@@ -68,6 +72,7 @@ body{
 .icons{
     position: absolute;
     bottom: 20px;
+    left: 20px;
     color: #cec6c6;
     cursor: pointer;
 }
@@ -322,7 +327,13 @@ body{
     width: 70%;
 }
 .contact-info p{
-    font-size: 22px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-info i{
+    font-size: 34px;
 }
 .contact-form input, textarea{
     width: 100%;
@@ -338,4 +349,20 @@ body{
 .form-btn:hover{
     background-color: #ddd9d9;
     color: black;
+}
+
+/* footer style  */
+.footer{
+    background-color: black;
+    color: white;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -5px;
+}
+.footer button{
+    padding:10px 15px;
 }
