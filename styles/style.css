@@ -3,16 +3,24 @@
     margin: 0;
     padding: 0;
 }
+body{
+ font-family: Raleway, sans-serif;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:0 20px;
     height: 68px;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 4px 10px 0px rgb(146, 138, 138);
 }
 
 .nav-lists{
     display: flex;
+    cursor: pointer;
 }
 .nav-lists li{
     text-decoration: none;
@@ -25,7 +33,7 @@
     background-image: url('https://getwallpapers.com/wallpaper/full/d/5/d/1064491-laptop-hd-wallpaper-1920x1200-iphone.jpg');
     /* height: calc(100vh - 50px); */
     background-size: cover;
-    height: calc(100vh - 68px);
+    height: calc(100vh);
     background-repeat: no-repeat;
     color: white;
     align-items: center;
@@ -46,9 +54,67 @@
     letter-spacing: 1px;
 }
 .banner-button{
-    background-color: #d8d0d0;
+    background-color: #cec6c6;
     padding: 15px;
     font-size: 15px;
     font-weight: 100;
     margin-top: 20px;
+    border: none;
+}
+.banner-button:hover{
+    background-color: white;
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    color: #cec6c6;
+    cursor: pointer;
+}
+.icons i:hover{
+    color: white;
+    
+}
+
+/* about style  */
+.about{
+    margin-top: 120px;
+    padding: 0 20px;
+}
+
+.about-title{
+    font-size: 24px;
+    text-align: center;
+    line-height: 43px;
+    font-weight: 100;
+}
+.about-sub-title{
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.about-lists{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+.about-list{
+    text-align: center;
+}
+.service-logo{
+    font-size: 64px;
+}
+
+.service-title{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 44px;
+    margin: 10px 0;
+}
+.service-sub-title{
+    font-weight: 100;
+    font-size: 14px;
 }
