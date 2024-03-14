@@ -143,8 +143,61 @@ body{
     padding: 12px;
     border: none;
 }
+.work-btn:hover{
+    background-color: #ccc2c2;
+    color: black;
+    padding: 12px;
+    border: none;
+}
 .work-img{
     max-width: 837px ;
     max-height: 394px;
     border-radius: 10px;
+}
+
+
+/* .the team style  */
+.team{
+    margin-top: 120px;
+    margin-bottom: 200px;
+    padding: 0 20px;
+}
+.cards{
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card{
+    box-shadow:0 4px 12px 0 rgb(146, 138, 138);
+}
+.card-des{
+    padding:0px 15px 15px;
+}
+.card-btn{
+    width: 100%;
+    padding: 15px;
+    border:none;
+    margin-top: 20px;
+}
+.card-btn:hover{
+    background-color: #cccccc;
+    width: 100%;
+    padding: 15px;
+    border:none;
+}
+.member-img{
+    width: 100%;
+    opacity: 0.8;
+}
+.member-name{
+    font-size: 28px;
+    font-weight: normal;
+    margin: 12px 0;
+}
+.member-title{
+    font-size: 15px;
+    font-weight: normal;
+    color: rgb(99, 94, 94);
+    margin: 22px 0;
 }
