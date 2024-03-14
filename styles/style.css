@@ -116,5 +116,35 @@ body{
 }
 .service-sub-title{
     font-weight: 100;
-    font-size: 14px;
+    font-size: 13px;
+}
+
+
+/* work style */
+.work{
+    margin-top: 120px;
+    background-color: #F1F1F1;
+    padding: 128px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.work-title{
+    font-size: 34px;
+    font-weight: normal;
+}
+.work-sub-title{
+    font-size: 17px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+.work-btn{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+}
+.work-img{
+    max-width: 837px ;
+    max-height: 394px;
+    border-radius: 10px;
 }
