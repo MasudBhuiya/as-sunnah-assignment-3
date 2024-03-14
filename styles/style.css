@@ -304,3 +304,38 @@ body{
     padding:48px 0;
     color: white;
 }
+
+/* contact style  */
+.contact{
+    margin-top: 120px;
+    padding: 78px 20px;
+    background-color: #F1F1F1;
+}
+.contacts{
+    display: flex;
+    margin-top: 68px;
+}
+.contact-info{
+    width: 30%;
+}
+.contact-form{
+    width: 70%;
+}
+.contact-info p{
+    font-size: 22px;
+}
+.contact-form input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: gainsboro;
+}
+.form-btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.form-btn:hover{
+    background-color: #ddd9d9;
+    color: black;
+}
