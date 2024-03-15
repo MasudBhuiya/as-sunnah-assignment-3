@@ -18,6 +18,11 @@ body{
     width: 100%;
     box-shadow: 0px 4px 10px 0px rgb(146, 138, 138);
 }
+.web-name{
+    letter-spacing: 4px;
+    opacity: 0.7;
+    cursor: pointer ;
+}
 
 .nav-lists{
     display: flex;
@@ -61,7 +66,7 @@ body{
 .banner-button{
     background-color: #cec6c6;
     padding: 15px;
-    font-size: 15px;
+    font-size:20px;
     font-weight: 100;
     margin-top: 20px;
     border: none;
@@ -355,14 +360,200 @@ body{
 .footer{
     background-color: black;
     color: white;
-    height: 300px;
+    height: 250px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: -5px;
+    margin-top: 90px;
 }
 .footer button{
     padding:10px 15px;
+}
+
+
+/* mobile responsive style  */
+@media screen and (max-width: 578px) {
+
+    .nav-lists{
+        display: flex;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* banner style  */
+.banner-title{
+    font-size: 44px;
+    font-weight: 100;
+    line-height: 55px;
+    letter-spacing:1px;
+}
+.banner-button{
+    font-size: 20px;
+}
+
+
+/* about style  */
+
+.about-lists{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+
+}
+
+/* design style */
+.design{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.design-img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* .the team style  */
+
+.cards{
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+/* review style  */
+.review{
+    background-color: black;
+    opacity: 0.6;
+    height: fit-content;
+    color: white;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+.review-number{
+    font-size: 32px;
+}
+
+
+
+/* skills style  */
+.skills{
+    margin-top: 120px;
+    background-color: #F1F1F1;
+    padding: 74px 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+
+.tables{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+
+/* contact style  */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+    gap: 30px;
+}
+.contact-info{
+    width: 100%;
+}
+.contact-form{
+    width: 100%;
+}
+
+
+
+
+}
+
+
+
+/* iPad responsive style  */
+@media screen and (min-width:579px) and (max-width: 980px) {
+
+    .nav-lists{
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* banner style  */
+.banner-title{
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 105px;
+    letter-spacing:1px;
+}
+
+
+/* about style  */
+
+.about-lists{
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+/* design style */
+.design{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.design-img{
+    width: 100%;
+}
+
+
+/* .the team style  */
+
+.cards{
+    margin-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+
+
+/* skills style  */
+.skills{
+    gap: 40px;
+}
+
+
+/* contact style  */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 68px;
+    gap: 30px;
+}
+.contact-info{
+    width: 100%;
+}
+.contact-form{
+    width: 100%;
+}
+
+
+
+
 }
