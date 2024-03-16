@@ -121,13 +121,13 @@ body{
 
 .service-title{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 44px;
     margin: 10px 0;
 }
 .service-sub-title{
     font-weight: 100;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 
@@ -236,10 +236,25 @@ body{
     padding: 0 20px;
     margin-top: 120px;
 }
+.single-work-img{
+    position: relative;
+}
 .work-img{
     width: 100%;
 }
-
+.work-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding:6px 10px;
+    font-weight: normal;
+    font-size: 22px;
+}
+.work-img:hover{
+    opacity: 0.5;
+}
 /* skills style  */
 .skills{
     margin-top: 120px;
@@ -301,6 +316,9 @@ body{
     background-color: white;
     height: fit-content;
 }
+.table:hover{
+    box-shadow: 0 4px 10px 0 black;
+}
 .table p{
     margin: 20px 0;
 }
@@ -350,6 +368,9 @@ body{
     background-color: black;
     color: white;
     border: none;
+    width: fit-content;
+    padding: 10PX;
+    text-align: center;
 }
 .form-btn:hover{
     background-color: #ddd9d9;
@@ -366,13 +387,20 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 90px;
 }
 .footer button{
     padding:10px 15px;
+    /* border: none; */
 }
-
-
+.footer button:hover{
+    background-color: #cccccc;
+}
+.footer-icons{
+    cursor: pointer;
+}
+.footer-icons i:hover{
+    color: #cccccc;
+}
 /* mobile responsive style  */
 @media screen and (max-width: 578px) {
 
@@ -476,7 +504,9 @@ body{
 .contact-form{
     width: 100%;
 }
-
+.form-btn{
+    width: 100%;
+}
 
 
 
@@ -506,7 +536,7 @@ body{
 .about-lists{
     margin-top: 64px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 
 }
@@ -548,11 +578,16 @@ body{
 }
 .contact-info{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contact-form{
     width: 100%;
 }
-
+.form-btn{
+    width: fit-content;
+}
 
 
 
