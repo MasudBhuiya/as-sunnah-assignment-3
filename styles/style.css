@@ -6,17 +6,21 @@
 body{
  font-family: Raleway, sans-serif;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0 20px;
-    height: 68px;
+.navbar-container{
+
     position: fixed;
     z-index: 10;
     background-color: #fff;
     width: 100%;
+    padding:0 20px;
+    
     box-shadow: 0px 4px 10px 0px rgb(146, 138, 138);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
 }
 .web-name{
     letter-spacing: 4px;
@@ -37,19 +41,25 @@ body{
     list-style: none;
     margin-left: 30px;
 }
-
+.container{
+    max-width: 1540px;
+    margin: 0 auto;
+}
 /* banner style  */
-.banner{
+.banner-container{
     background-image: url('https://getwallpapers.com/wallpaper/full/d/5/d/1064491-laptop-hd-wallpaper-1920x1200-iphone.jpg');
     /* height: calc(100vh - 50px); */
     background-size: cover;
-    height: calc(100vh);
     background-repeat: no-repeat;
+}
+.banner{
     color: white;
     align-items: center;
     display: flex;
+    height: calc(100vh);
     font-family: Raleway, sans-serif;
     padding: 0 20px;
+    position: relative;
 }
 .banner-title{
     font-size: 64px;
@@ -132,12 +142,16 @@ body{
 
 
 /* design style */
-.design{
+.design-container{
     margin-top: 120px;
     background-color: #F1F1F1;
     padding: 128px 20px;
+}
+.design{
+   
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 .design-title{
     font-size: 34px;
@@ -215,10 +229,13 @@ body{
 
 
 /* review style  */
-.review{
+.review-container{
     background-color: black;
     opacity: 0.6;
-    height: 210px;
+    
+}
+.review{
+    height: 250px;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -256,9 +273,11 @@ body{
     opacity: 0.5;
 }
 /* skills style  */
-.skills{
+.skills-container{
     margin-top: 120px;
     background-color: #F1F1F1;
+}
+.skills{
     padding: 74px 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -335,8 +354,7 @@ body{
 
 /* contact style  */
 .contact{
-    margin-top: 120px;
-    padding: 78px 20px;
+    padding: 128px 20px;
     background-color: #F1F1F1;
 }
 .contacts{
@@ -411,11 +429,23 @@ body{
     }
 
     /* banner style  */
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 .banner-title{
     font-size: 44px;
     font-weight: 100;
     line-height: 55px;
     letter-spacing:1px;
+    max-width: 80%;
+    text-align: center;
+}
+.banner-sub-title{
+    max-width: 80%;
+    text-align: center;
 }
 .banner-button{
     font-size: 20px;
@@ -500,6 +530,9 @@ body{
 }
 .contact-info{
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .contact-form{
     width: 100%;
